@@ -11,28 +11,7 @@ $arComponentParameters = [
         ],
     ],
     'PARAMETERS' => [
-        'SEF_FOLDER_TEMPLATE' => [
-            'PARENT' => 'SETTINGS',
-            'NAME' => GetMessage('SEF_PARAMETER_NAME'),
-            'TYPE' => 'string',
-            'DEFAULT' => '',
-        ],
         "SEF_MODE" => [
-            "vendors" => [
-                "NAME" => 'vendor',
-                "DEFAULT" => "#vendor#/",
-                "VARIABLES" => [
-                ],
-            ],
-            "model" => [
-                "NAME" => 'model',
-                "DEFAULT" => "#vendor#/#model#/",
-                "VARIABLES" => [
-                    "SECTION_ID",
-                    "SECTION_CODE",
-                    "SECTION_CODE_PATH",
-                ],
-            ],
             "laptop" => [
                 "NAME" => 'laptop',
                 "DEFAULT" => "detail/#laptop#",
