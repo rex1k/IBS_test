@@ -38,7 +38,7 @@ class TestListComponent extends CBitrixComponent
 
         $arParams['grid_options'] = (new Options($entityShortName))->getCurrentOptions();
         $arParams['filter_options'] = (new FilterOptions($entityShortName))->getFilter();
-        $arParams['page_size'] = $arParams['grid_options']['page_size'];
+        $arParams['page_size'] = $arParams['grid_options']['page_size'] ?: 20;
 
         return $arParams;
     }
